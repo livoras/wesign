@@ -1,0 +1,25 @@
+{
+  "name": "wesign",
+  "version": "0.0.1",
+  "description": "WeChat JSAPI Helper Functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/livoras/wesign.git"
+  },
+  "keywords": [
+    "WeChat"
+  ],
+  "author": "Livoras",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/livoras/wesign/issues"
+  },
+  "homepage": "https://github.com/livoras/wesign",
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
