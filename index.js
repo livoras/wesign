@@ -85,5 +85,6 @@ function getSignature(noncestr, timestamp, jsapi_ticket) {
 
 module.exports = {
   init: init,
-  signature: signature
+  signature: signature,
+  config: config
 }
