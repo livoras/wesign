@@ -1,5 +1,6 @@
 var crypto = require('crypto')
 var _ = require("lodash")
+var request = require("superagent")
 
 var initialized = false
 var config = {
@@ -52,7 +53,7 @@ function signature(url) {
   var noncestr = config.noncestr;
   var timestamp = "" + (+new Date)
   var jsapi_ticket = config.jsapi_ticket;
-  var signatureStr = getSignature(noncestr, timestamp, jsapi_ticket)
+  var signatureStr = getSignature(noncestr, timestamp, jsapi_ticket, url)
   return {
     signature: signatureStr,
     noncestr: noncestr,
@@ -60,7 +61,7 @@ function signature(url) {
   }
 }
 
-function getSignature(noncestr, timestamp, jsapi_ticket) {
+function getSignature(noncestr, timestamp, jsapi_ticket, url) {
   // 微信签名算法
   var shasum = crypto.createHash('sha1');
   var data = [

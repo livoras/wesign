@@ -1,6 +1,6 @@
 {
   "name": "wesign",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "WeChat JSAPI Helper Functions",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/livoras/wesign",
   "dependencies": {
-    "lodash": "^3.10.1"
+    "lodash": "^3.10.1",
+    "superagent": "^1.4.0"
   }
 }
